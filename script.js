@@ -27,3 +27,11 @@ let name = "Pina";
 let message = `Hello ${name}`;
 
 showMessage(message);
+
+//objects & Symbols
+
+let person = {
+      firstName: "John",
+      lastName: "Mayer"
+};
+showMessage(`${person.firstName}` + ` ${person.lastName}`);
