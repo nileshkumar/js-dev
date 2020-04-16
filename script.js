@@ -20,3 +20,10 @@ showMessage(price);
 
 showMessage(price++);
 console.log(price);
+
+//string with back-tick
+
+let name = "Pina";
+let message = `Hello ${name}`;
+
+showMessage(message);
