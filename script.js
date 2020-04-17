@@ -37,6 +37,7 @@ let person = {
 };
 showMessage(`${person.firstName}` + ` ${person.lastName}`);
 
+
 // comparison operator
 
 let a = 1.1,
@@ -82,3 +83,14 @@ function generateCode(value){
 
 let code = generateCode(5);
 showMessage(code);
+
+//object method
+let model = {
+      firstName: "Maria",
+      lastName: "Merry",
+      age: 25,
+      showInfo: function(){
+        showMessage(this.firstName +' is '+ this.age);
+      }
+};
+model.showInfo();
