@@ -1,3 +1,4 @@
+//function definition
 function showMessage(msg){
   document.getElementById("message").textContent = msg;
 }
@@ -35,3 +36,49 @@ let person = {
       lastName: "Mayer"
 };
 showMessage(`${person.firstName}` + ` ${person.lastName}`);
+
+// comparison operator
+
+let a = 1.1,
+    b = 1.3;
+
+showMessage(a+b === 2.4);
+
+//to fix the floating point comparison
+showMessage(+(a+b).toFixed(2) === 2.4);
+
+
+//function experession
+let myfuncton = function logMessage(){
+  console.log("loging the message");
+}
+myfuncton();  // calling the function
+
+//function returning values
+
+function getCode(value){
+  let code = value * 2;
+  return code;
+}
+let showCode = getCode(10);
+showMessage(showCode);
+
+//nested function & scope
+
+let key = 25;
+function generateCode(value){
+
+  let getCode = function(){
+    let key = 50;
+    console.log("in getCode " + key);
+    return key;
+  }
+
+  let showCode = value * getCode();
+    console.log("showCode " + key);
+    return showCode;
+
+}
+
+let code = generateCode(5);
+showMessage(code);
