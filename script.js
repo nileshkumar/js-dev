@@ -107,3 +107,8 @@ function incrementAge(student){
 incrementAge(student);
 
 showMessage(student.age);
+
+//styling DOM elements
+const msg = document.getElementById("message");
+msg.style.color = "blue";
+msg.style.fontWeight = 100;
