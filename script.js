@@ -94,3 +94,16 @@ let model = {
       }
 };
 model.showInfo();
+
+//passing objects to a function
+let student = {
+  name: "Sham",
+  age: 25
+};
+
+function incrementAge(student){
+  student.age++;
+}
+incrementAge(student);
+
+showMessage(student.age);
